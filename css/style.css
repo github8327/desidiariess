@@ -266,11 +266,12 @@ h1,
 
 }
 
-.footer a {
+.footer a, .footer p{
     color: #fff;
     font-size: 13px;
     font-family: Regular;
     margin-right: 20px;
+    margin-bottom:0;
 }
 
 .pad-t-10 {
@@ -453,7 +454,7 @@ strong,
         margin-right: 10px;
     }
 
-    .footer a {
+    .footer a, .footer p{
         color: #fff;
         font-size: 11px;
         margin-right: 15px;

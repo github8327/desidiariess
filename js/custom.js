@@ -24,44 +24,9 @@
           }
       });
   });
-  $(".navbar-nav .nav-item.1").click(function() {
-      $(".nav-item .line").addClass("off");
-      $(".nav-item.1 .line").removeClass("off");
-  });
-  $(".navbar-nav .nav-item.2").click(function() {
-      $(".nav-item .line").addClass("off");
-      $(".nav-item.2 .line").removeClass("off");
-  });
-
-  $(".navbar-nav .nav-item.3").click(function() {
-      $(".nav-item .line").addClass("off");
-      $(".nav-item.3 .line").removeClass("off");
-  });
-  $(".navbar-nav .nav-item.4").click(function() {
-      $(".nav-item .line").addClass("off");
-      $(".nav-item.4 .line").removeClass("off");
-  });
-
-  $(".our_product_page .navbar-nav .nav-item.1").click(function() {
-      $(".nav-item .line").addClass("off");
-      $(".nav-item.1 .line").removeClass("off");
-  });
-  $(".our_product_page .navbar-nav .nav-item.2").click(function() {
-      $(".nav-item .line").addClass("off");
-      $(".nav-item.2 .line").removeClass("off");
-  });
-
-  $(".our_product_page .navbar-nav .nav-item.3").click(function() {
-      $(".nav-item .line").addClass("off");
-      $(".nav-item.3 .line").removeClass("off");
-  });
-  $(".our_product_page .navbar-nav .nav-item.4").click(function() {
-      $(".nav-item .line").addClass("off");
-      $(".nav-item.4 .line").removeClass("off");
-  });
 
 
-
+  //  mobile menu 
   if (window.matchMedia("(max-width: 767px)").matches) {
       var num = 1;
 
@@ -83,3 +48,30 @@
 
       });
   }
+
+
+
+
+// ourproduct menu active line
+
+ $(window).scroll(function (event) {
+        var sc = $(window).scrollTop();
+
+         if (sc>1203 && sc<1876){
+              $(".homepage .navbar-nav .nav-item.1 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.1 .line").addClass("off");
+        }
+
+        if (sc>1877 && sc<2474){
+              $(".homepage .navbar-nav .nav-item.3 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.3 .line").addClass("off");
+        }
+
+        if (sc>2500){
+              $(".homepage .navbar-nav .nav-item.4 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.4 .line").addClass("off");
+        }
+    });
