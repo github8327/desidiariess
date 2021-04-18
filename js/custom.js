@@ -121,6 +121,31 @@ $(window).scroll(function (event) {
     });
 }
 
+if (window.matchMedia("(max-width: 768px)").matches) {
+$(window).scroll(function (event) {
+        var sc = $(window).scrollTop();
+
+         if (sc>700 && sc<1430){
+              $(".homepage .navbar-nav .nav-item.1 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.1 .line").addClass("off");
+        }
+
+        if (sc>1530 && sc<2200){
+              $(".homepage .navbar-nav .nav-item.3 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.3 .line").addClass("off");
+        }
+
+        if (sc>2220){
+              $(".homepage .navbar-nav .nav-item.4 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.4 .line").addClass("off");
+        }
+    });
+}
+
+
 if (window.matchMedia("(max-width: 592px)").matches) {
 $(window).scroll(function (event) {
         var sc = $(window).scrollTop();
