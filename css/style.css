@@ -610,6 +610,9 @@ strong,
         float: none;
         text-align: center;
     }
+    .nav-link:hover, .nav-link:focus{
+        background: red !important;
+    }
 }
 
 @media screen and (max-width: 575px) {

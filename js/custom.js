@@ -49,14 +49,10 @@
       });
   }
 
-
-
-
 // ourproduct menu active line
-
+  if (window.matchMedia("(min-width: 1200px)").matches) {
  $(window).scroll(function (event) {
         var sc = $(window).scrollTop();
-
          if (sc>1203 && sc<1876){
               $(".homepage .navbar-nav .nav-item.1 .line").removeClass("off");
         }else{
@@ -75,3 +71,78 @@
            $(".homepage .navbar-nav .nav-item.4 .line").addClass("off");
         }
     });
+
+}else if (window.matchMedia("(max-width: 1199px)").matches) {
+ $(window).scroll(function (event) {
+        var sc = $(window).scrollTop();
+
+         if (sc>1103 && sc<1745){
+              $(".homepage .navbar-nav .nav-item.1 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.1 .line").addClass("off");
+        }
+
+        if (sc>1750 && sc<2374){
+              $(".homepage .navbar-nav .nav-item.3 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.3 .line").addClass("off");
+        }
+
+        if (sc>2380){
+              $(".homepage .navbar-nav .nav-item.4 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.4 .line").addClass("off");
+        }
+    });
+
+}
+
+if (window.matchMedia("(max-width: 992px)").matches) {
+$(window).scroll(function (event) {
+        var sc = $(window).scrollTop();
+
+         if (sc>920 && sc<1630){
+              $(".homepage .navbar-nav .nav-item.1 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.1 .line").addClass("off");
+        }
+
+        if (sc>1632 && sc<2200){
+              $(".homepage .navbar-nav .nav-item.3 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.3 .line").addClass("off");
+        }
+
+        if (sc>2210){
+              $(".homepage .navbar-nav .nav-item.4 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.4 .line").addClass("off");
+        }
+    });
+}
+
+if (window.matchMedia("(max-width: 592px)").matches) {
+$(window).scroll(function (event) {
+        var sc = $(window).scrollTop();
+
+         if (sc>2000 && sc<3200){
+              $(".homepage .navbar-nav .nav-item.1 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.1 .line").addClass("off");
+        }
+
+        if (sc>3220 && sc<4000){
+              $(".homepage .navbar-nav .nav-item.3 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.3 .line").addClass("off");
+        }
+
+        if (sc>4080){
+              $(".homepage .navbar-nav .nav-item.4 .line").removeClass("off");
+        }else{
+           $(".homepage .navbar-nav .nav-item.4 .line").addClass("off");
+        }
+    });
+}
+
+
